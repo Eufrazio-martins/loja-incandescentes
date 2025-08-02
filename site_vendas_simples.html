@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Incandescente</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; }
+    header { background: #d32f2f; color: white; padding: 1em; text-align: center; }
+    nav { background: #b71c1c; padding: 0.5em; text-align: center; }
+    nav a { color: white; margin: 0 1em; text-decoration: none; font-weight: bold; }
+    .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1em; padding: 2em; }
+    .product { border: 1px solid #ccc; border-radius: 8px; padding: 1em; text-align: center; }
+    .product img { width: 100%; height: auto; border-radius: 6px; }
+    .product h3 { margin: 0.5em 0; }
+    .product button { background: #d32f2f; color: white; border: none; padding: 0.5em 1em; border-radius: 4px; cursor: pointer; }
+    footer { background: #f5f5f5; text-align: center; padding: 1em; font-size: 0.9em; }
+    form { display: flex; flex-direction: column; max-width: 400px; margin: 2em auto; padding: 1em; border: 1px solid #ccc; border-radius: 8px; }
+    input, textarea { margin-bottom: 1em; padding: 0.5em; border: 1px solid #ccc; border-radius: 4px; }
+    form button { background: #d32f2f; color: white; padding: 0.7em; border: none; border-radius: 4px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Loja Incandescente</h1>
+    <p>Ofertas quentes para você!</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="inicio" class="container">
+    <div style="grid-column: 1 / -1; text-align: center;">
+      <h2>Bem-vindo à Loja Incandescente</h2>
+      <p>Produtos de qualidade com preços incríveis!</p>
+    </div>
+  </section>
+
+  <main id="produtos" class="container">
+    <div class="product">
+      <img src="https://via.placeholder.com/200" alt="Produto 1">
+      <h3>Produto 1</h3>
+      <p>R$ 99,90</p>
+      <button>Comprar</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200" alt="Produto 2">
+      <h3>Produto 2</h3>
+      <p>R$ 149,90</p>
+      <button>Comprar</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200" alt="Produto 3">
+      <h3>Produto 3</h3>
+      <p>R$ 79,90</p>
+      <button>Comprar</button>
+    </div>
+  </main>
+
+  <section id="contato">
+    <form>
+      <h2>Fale Conosco</h2>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Loja Incandescente. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
